@@ -15,11 +15,12 @@ function diceGame(){
 	const secondValue = randomSecond();
 
 	if(firstValue > secondValue){
-		document.querySelector("h1").innerHTML = "Player 1 WON!!";
+		document.querySelector("h1").innerHTML = "🚩Player 1 WON!!";
 	} else if (firstValue < secondValue){
-		document.querySelector("h1").innerHTML = "Player 2 WON!!";
+		document.querySelector("h1").innerHTML = "Player 2 WON!!🚩";
 	}else {
-		document.querySelector("h1").innerHTML = "It's a draw!!";
+		document.querySelector("h1").innerHTML = "It's a draw!!🤝";
 	}
 }
-diceGame();
+let button = document.getElementById("startbtn");
+button.addEventListener("click", diceGame);
